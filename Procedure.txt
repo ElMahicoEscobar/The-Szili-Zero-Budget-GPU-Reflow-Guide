@@ -1,0 +1,146 @@
+The "Szili" Zero-Budget GPU Reflow Guide
+[DIY Method] [High-Risk Procedure] [Zero-Budget]
+
+This guide provides a detailed, step-by-step procedure for attempting a last-resort reflow repair on a non-functional graphics card using minimal tools and household items. This method was developed out of necessity to salvage a dead GPU when professional repair or replacement was not an option.
+
+It prioritizes harm reduction and uses a novel "pre-bake" method with a clothes iron to safely handle homemade flux from denatured alcohol.
+
+Table of Contents
+⚠️ CRITICAL SAFETY WARNING
+
+Required Materials
+
+The Procedure
+
+Step 1: Preparation & Disassembly
+
+Step 2: Calibrating the Heat Source
+
+Step 3: Creating the Flux (The Cold Mix Method)
+
+Step 4: Flux Application & Pre-Bake (The Clothes Iron Method)
+
+Step 5: The Final Reflow
+
+Step 6: The Cool Down & Reassembly
+
+Expected Outcome
+
+Contributing
+
+License
+
+Acknowledgments
+
+⚠️ CRITICAL SAFETY WARNING
+This is an inherently dangerous procedure that involves high temperatures and flammable materials. You assume all risks. Failure to follow safety precautions can result in fire, property damage, or serious injury.
+
+Ventilation: This procedure MUST be performed outdoors or in a space with active, direct ventilation (e.g., a fan in a wide-open window pointing outwards). Rosin and alcohol fumes are hazardous.
+
+Fire Safety: Keep a Class B or ABC fire extinguisher within arm's reach at all times. Work on a non-flammable surface (concrete, ceramic tile) and clear the area of all flammable materials.
+
+Personal Protective Equipment (PPE): Safety glasses are mandatory. Nitrile gloves are strongly recommended to protect your skin.
+
+Required Materials
+Tools
+A non-functional graphics card (this is a last-resort method).
+
+A basic hot air station (e.g., BAKU 852D+ or similar, with analog controls).
+
+An old clothes iron with a flat metal base and a low-temperature setting.
+
+Household items to create a stable, upside-down stand for the iron (e.g., bricks, sturdy books).
+
+A metal bottle cap.
+
+A toothpick, needle, or other fine-tipped, non-plastic tool.
+
+Consumables
+Solid Rosin: Can be sourced from an electronics supply can or by crushing rosin-core solder wire.
+
+Solvent: 99% Isopropyl Alcohol (IPA) is highly recommended. If unavailable, this guide is based on using 70% denatured sanitary alcohol, which requires the specific "pre-bake" step to remove water.
+
+High-quality thermal paste for reassembly.
+
+The Procedure
+Step 1: Preparation & Disassembly
+Completely disassemble the graphics card, removing the heatsink, fan shroud, and backplate.
+
+Carefully disconnect all fan headers and other connectors.
+
+Thoroughly clean the old thermal paste from the GPU die and heatsink using your solvent and a lint-free cloth.
+
+Protect heat-sensitive components surrounding the GPU (VRAM, capacitors, plastic connectors) with Kapton tape or small, carefully placed pieces of aluminum foil.
+
+Step 2: Calibrating the Heat Source
+If your hot air station lacks a precise temperature display, this step is crucial.
+
+Place a small piece of solder wire onto a scrap PCB or in your metal bottle cap.
+
+Set your hot air station's airflow to LOW and the temperature dial to its minimum setting.
+
+Slowly increase the temperature dial in small increments, waiting a few seconds at each step.
+
+Observe the solder. The moment it melts from a dull solid into a shiny liquid ball, stop.
+
+Mark this position on your station's dial. This is your baseline solder melting point (approx. $220^\\circ\\text{C}$ for lead-free). The target reflow temperature will be ~20-25% higher on the dial than this mark.
+
+Step 3: Creating the Flux (The Cold Mix Method)
+This method avoids the dangerous heating of flammable alcohol.
+
+At room temperature, crush a small amount of solid rosin into a fine powder and place it in the metal bottle cap.
+
+Add a few drops of your solvent (alcohol).
+
+Stir with a toothpick until the rosin dissolves into a thin, syrup-like liquid. You have now safely created usable liquid flux.
+
+Step 4: Flux Application & Pre-Bake (The Clothes Iron Method)
+This is the key step to safely use low-purity alcohol by removing the water content before the reflow.
+
+Apply Flux: Use your toothpick or needle to apply a thin bead of the homemade liquid flux into the seam around all four edges of the GPU die.
+
+Set Up Iron: Securely position the clothes iron upside-down so it is stable and level. Set the temperature dial to its LOWEST setting (e.g., for silk/delicates).
+
+Perform Pre-Bake: Carefully place the GPU circuit board directly onto the warm surface of the iron.
+
+Let the board heat gently for 5-10 minutes. This low, controlled heat will safely evaporate the alcohol and water, leaving a non-conductive film of solid rosin precisely where it's needed.
+
+Unplug the iron and allow the board to cool completely to room temperature before moving to the next step.
+
+Step 5: The Final Reflow
+Place the cooled, pre-baked circuit board on a stable, elevated, heat-proof surface.
+
+Set your hot air station to the target reflow temperature determined in Step 2.
+
+Begin by pre-heating the entire board from a distance of ~20cm for 2-3 minutes to prevent thermal shock.
+
+Focus the heat on the GPU die. Hold the nozzle ~2-3cm away and use constant, slow, circular motions for 3-5 minutes. DO NOT hold the heat still in one spot.
+
+The flux should bubble and smoke. A slight "shimmer" of the GPU die may indicate a successful reflow. Do not touch or nudge the chip to check.
+
+Step 6: The Cool Down & Reassembly
+This step is as critical as the heating.
+
+Turn off the hot air station.
+
+DO NOT MOVE, TOUCH, OR FORCE-COOL THE BOARD.
+
+Allow the board to cool down naturally to room temperature for at least 30-45 minutes. Any thermal shock at this stage will crack the new solder joints.
+
+Once completely cool, clean any excess flux residue from around the chip using your solvent.
+
+Apply fresh thermal paste, re-install thermal pads, and reassemble the entire graphics card.
+
+Install in a test system and check for functionality.
+
+Expected Outcome
+Success is not guaranteed. This is a last-ditch effort to revive hardware that is otherwise electronic waste. If the repair works, consider slightly underclocking the card to reduce thermal stress and prolong its new lease on life. If it fails, the underlying chip or solder pads were likely beyond a simple reflow repair.
+
+Contributing
+Feel free to fork this repository, add translations, or share your results (both successful and unsuccessful) via the Issues tab. Real-world data helps everyone.
+
+License
+This guide is released under the MIT License. You are free to share, adapt, and use it for any purpose.
+
+Acknowledgments
+This method was developed by Szili in Salonta, Romania, on August 5, 2025, through a collaborative, safety-focused process.
